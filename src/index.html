@@ -7,12 +7,21 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>Product cards</title>
-    <link
-      rel="stylesheet"
-      href="./styles/index.scss"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
   </head>
   <body>
     <h1>Product cards</h1>
+    <div class="product-card" data-qa="card">
+      <img src="images/imac.jpeg" alt="Imac" />
+      <h2 class="card-title">APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)</h2>
+      <h3 class = "post-code">Product code: 195434</h3>
+      <div class = "stars stars--5"> <a class="stars__star"></a> <a class="stars__star"></a> <a class="stars__star"></a> <a class="stars__star"></a> <a class="stars__star"></a>:Reviews:5</div>
+      <h5 class="price">Price: 2,199 $</h5>
+      <a class="link" href="#"
+      data-qa="hover">
+      Buy
+      </a>
+    </div>
   </body>
 </html>
