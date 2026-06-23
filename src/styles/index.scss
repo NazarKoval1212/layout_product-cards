@@ -28,10 +28,10 @@ body {
 
 .card__image {
   display: block;
-  margin: 0 auto 16px;
+  margin: 0 auto 40px;
   width: 160px;
   height: 134px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .card-title {
@@ -40,7 +40,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #000;
+  color: var(--text-accent-color);
 }
 
 .card__code {
@@ -53,7 +53,7 @@ body {
 .card__review-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 24px;
 }
 
@@ -67,19 +67,17 @@ body {
 
 .stars {
   display: flex;
-
   .stars__star {
     width: 16px;
     height: 16px;
     background-image: url('../images/star.svg');
     background-repeat: no-repeat;
+    background-position: center;
     margin-right: 4px;
-
     &:last-child {
       margin-right: 0;
     }
   }
-
   &.stars--4 {
     .stars__star:nth-child(-n + 4) {
       background-image: url('../images/star-active.svg');
@@ -106,7 +104,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
-  color: #000;
+  color: var(--text-accent-color);
 }
 
 .card__buy {
@@ -126,9 +124,8 @@ body {
   text-transform: uppercase;
   background-color: var(--main-color);
   margin-top: auto;
-
   &:hover {
-    background-color: #009cd6;
-    border-color: #009cd6;
+    background-color: #fff;
+    color: var(--main-color);
   }
 }
